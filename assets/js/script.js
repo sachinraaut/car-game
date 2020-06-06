@@ -53,7 +53,7 @@ function moveLines(){
 function endGame() {
 	player.start = false;
 	startScreen.classList.remove('hide');
-	let finalScore = player.score + 2;
+	let finalScore = player.score - 1;
 	startScreen.innerHTML = `Game Over <br> Your final score is ${finalScore} <br> Press Here to restart the game`
 }
 
